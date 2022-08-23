@@ -1,4 +1,4 @@
-interface GithubUser {
+export interface GithubUser {
   login: string
   id: number
   node_id: string
