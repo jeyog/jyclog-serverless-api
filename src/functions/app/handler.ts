@@ -1,5 +1,3 @@
-
-
 import { createServer, proxy } from 'aws-serverless-express'
 import { app } from './app'
 
