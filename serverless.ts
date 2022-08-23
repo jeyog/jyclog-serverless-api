@@ -5,7 +5,7 @@ import app from '@functions/app';
 const serverlessConfiguration: AWS = {
   service: 'jyclog-serverless-api',
   frameworkVersion: '3',
-  plugins: ['serverless-esbuild', 'serverless-offline'],
+  plugins: ['serverless-esbuild', 'serverless-webpack', 'serverless-offline'],
   provider: {
     name: 'aws',
     runtime: 'nodejs16.x',
