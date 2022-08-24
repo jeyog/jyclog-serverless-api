@@ -1,17 +1,11 @@
-import express, { Express, Request, Response } from 'express'
+import express, { Express } from 'express'
 import { eventContext } from 'aws-serverless-express/middleware'
+import aboutRouter from './routes/abouts'
 
 const app: Express = express()
 
 app.use(eventContext())
-
-app.get('/', (req: Request, res: Response) => {
-    res.json(req.apiGateway.event)
-})
-
-app.get('/hello', (req: Request, res: Response) => {
-    console.log(req)
-    res.send('Hello World!!')
-})
+app.use(express.json())
+app.use('/abouts', aboutRouter)
 
 export { app }
