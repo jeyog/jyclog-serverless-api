@@ -20,7 +20,8 @@ const serverlessConfiguration: AWS = {
       DB_HOST: '127.0.0.1',
       DB_USER: 'root',
       DB_PASSWORD: '10241207',
-      DB_DATABASE: 'jyclog'
+      DB_DATABASE: 'jyclog',
+      ADMIN_GITHUB_ID: '80824142'
     },
   },
   // import the function via paths
