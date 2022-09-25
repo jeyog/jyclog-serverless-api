@@ -5,5 +5,6 @@ export interface About {
     profileUrl: string | null
     job: string
     introduction: string
+    githubUrl: string | null
     instagramUrl: string | null
 }
